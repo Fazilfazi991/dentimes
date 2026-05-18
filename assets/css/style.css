@@ -190,8 +190,24 @@ a {
   transition: var(--transition-smooth);
 }
 
+.logo-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 1px solid var(--gold-primary);
+  background: linear-gradient(145deg, rgba(223, 186, 115, 0.1), rgba(7, 5, 3, 0.9));
+  box-shadow: var(--shadow-gold);
+  transition: var(--transition-smooth);
+}
+
 .brand:hover .mark {
   transform: rotate(360deg);
+  box-shadow: 0 0 20px var(--gold-glow);
+}
+
+.brand:hover .logo-img {
+  transform: scale(1.08);
   box-shadow: 0 0 20px var(--gold-glow);
 }
 
