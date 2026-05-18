@@ -191,14 +191,21 @@ a {
 }
 
 .logo-img {
-  width: 48px;
-  height: 48px;
+  width: 68px;
+  height: 68px;
   object-fit: contain;
   border-radius: 50%;
-  border: 1px solid var(--gold-primary);
-  background: linear-gradient(145deg, rgba(223, 186, 115, 0.1), rgba(7, 5, 3, 0.9));
-  box-shadow: var(--shadow-gold);
+  border: 1.5px solid var(--gold-primary);
+  background: linear-gradient(145deg, rgba(223, 186, 115, 0.15), rgba(7, 5, 3, 0.95));
+  box-shadow: 0 0 20px rgba(223, 186, 115, 0.25);
   transition: var(--transition-smooth);
+}
+
+.footer .logo-img {
+  width: 90px;
+  height: 90px;
+  border-width: 2px;
+  box-shadow: 0 0 30px rgba(223, 186, 115, 0.3);
 }
 
 .brand:hover .mark {
@@ -207,8 +214,9 @@ a {
 }
 
 .brand:hover .logo-img {
-  transform: scale(1.08);
-  box-shadow: 0 0 20px var(--gold-glow);
+  transform: scale(1.06);
+  border-color: var(--gold-light);
+  box-shadow: 0 0 35px var(--gold-glow);
 }
 
 .brand b {
