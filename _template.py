@@ -8,8 +8,8 @@ products = [
         'name': 'Burberry Hero',
         'brand': 'Burberry',
         'cat': 'Men',
-        'img1': 'images-new/img-5.png',
-        'img2': 'images-new/img-6.png',
+        'img1': 'images-new/burberry-hero-main.png',
+        'img2': 'images-new/burberry-hero-alt.png',
         'price': 'QAR 299',
         'desc': 'Woody aromatic fragrance with a premium modern mood.',
         'badge': 'Best Seller'
@@ -18,8 +18,8 @@ products = [
         'name': 'Lancôme La Vie Est Belle',
         'brand': 'Lancôme',
         'cat': 'Women',
-        'img1': 'images-new/img-7.png',
-        'img2': 'images-new/img-8.png',
+        'img1': 'images-new/lancome-main.png',
+        'img2': 'images-new/lancome-alt.png',
         'price': 'QAR 349',
         'desc': 'Elegant floral sweet fragrance made for signature occasions.',
         'badge': 'New Arrival'
@@ -28,8 +28,8 @@ products = [
         'name': 'Lattafa Asad',
         'brand': 'Lattafa',
         'cat': 'Arabic',
-        'img1': 'images-new/img-9.png',
-        'img2': 'images-new/img-10.png',
+        'img1': 'images-new/lataffa-asad-main.png',
+        'img2': 'images-new/lataffa-asad-alt.png',
         'price': 'QAR 129',
         'desc': 'Bold oriental fragrance with warm spice and long-lasting depth.',
         'badge': 'Arabic Oud'
@@ -39,7 +39,7 @@ products = [
         'brand': 'Armaf',
         'cat': 'Men',
         'img1': 'assets/images/armaf-club.webp',
-        'img2': 'images-new/img-2.png',
+        'img2': 'assets/images/mens-collection.webp',
         'price': 'QAR 189',
         'desc': 'Strong, classy and confident scent for daily and evening wear.',
         'badge': 'Best Seller'
@@ -49,7 +49,7 @@ products = [
         'brand': 'Afnan',
         'cat': 'Men',
         'img1': 'assets/images/afnan-9pm.webp',
-        'img2': 'images-new/img-6.png',
+        'img2': 'images-new/men-category-banner.png',
         'price': 'QAR 159',
         'desc': 'Modern evening fragrance with a sweet, powerful trail.',
         'badge': 'New Arrival'
@@ -58,8 +58,8 @@ products = [
         'name': 'Guerlain Inspired Selection',
         'brand': 'Guerlain',
         'cat': 'Women',
-        'img1': 'images-new/img-4.png',
-        'img2': 'assets/images/womens-collection.webp',
+        'img1': 'assets/images/gift-sets.webp',
+        'img2': 'images-new/giftset-category-banner.png',
         'price': 'QAR 399',
         'desc': 'Luxury floral-amber profile with premium bottle presentation.',
         'badge': 'Gift Pick'
@@ -69,7 +69,7 @@ products = [
         'brand': 'French Avenue',
         'cat': 'Arabic',
         'img1': 'assets/images/arabic-collection.webp',
-        'img2': 'images-new/img-3.png',
+        'img2': 'images-new/arabic-category-banner.png',
         'price': 'QAR 169',
         'desc': 'Rich oud, musk and amber notes for a strong Arabic identity.',
         'badge': 'Arabic Oud'
@@ -78,8 +78,8 @@ products = [
         'name': 'Paris Corner Emirene',
         'brand': 'Paris Corner',
         'cat': 'Women',
-        'img1': 'images-new/img-1.png',
-        'img2': 'assets/images/womens-collection.webp',
+        'img1': 'assets/images/womens-collection.webp',
+        'img2': 'images-new/women-category-banner.png',
         'price': 'QAR 149',
         'desc': 'Soft elegant scent with a feminine premium finish.',
         'badge': 'New Arrival'
@@ -172,28 +172,28 @@ index = head('Home') + f'''
       </div>
       <div class="grid category-grid">
         <a class="cat reveal reveal-slide-up" href="shop.html">
-          <img src="images-new/img-2.png" alt="Men's Perfumes">
+          <img src="images-new/men-category-banner.png" alt="Men's Perfumes">
           <div>
             <h3>Men's Perfumes</h3>
             <p>Fresh • Woody • Signature</p>
           </div>
         </a>
         <a class="cat reveal reveal-slide-up" href="shop.html">
-          <img src="images-new/img-1.png" alt="Women's Perfumes">
+          <img src="images-new/women-category-banner.png" alt="Women's Perfumes">
           <div>
             <h3>Women's Perfumes</h3>
             <p>Floral • Sweet • Elegant</p>
           </div>
         </a>
         <a class="cat reveal reveal-slide-up" href="shop.html">
-          <img src="images-new/img-3.png" alt="Arabic Perfumes">
+          <img src="images-new/arabic-category-banner.png" alt="Arabic Perfumes">
           <div>
             <h3>Arabic Perfumes</h3>
             <p>Oud • Musk • Long lasting</p>
           </div>
         </a>
         <a class="cat reveal reveal-slide-up" href="offers.html">
-          <img src="images-new/img-4.png" alt="Gift Sets">
+          <img src="images-new/giftset-category-banner.png" alt="Gift Sets">
           <div>
             <h3>Gift Sets</h3>
             <p>Perfect for occasions</p>
@@ -356,7 +356,7 @@ offers = head('Offers') + f'''
   </section>
   <section class="section" style="padding-top: 20px;">
     <div class="container">
-      <div class="banner reveal reveal-scale-in" style="background-image:url('images-new/img-4.png')">
+      <div class="banner reveal reveal-scale-in" style="background-image:url('images-new/giftset-category-banner.png')">
         <div class="banner-content">
           <span class="eyebrow" style="color: var(--gold-light);">Perfect Gift</span>
           <h2 class="serif" style="color: var(--color-ivory);">Luxury fragrance sets for every occasion.</h2>

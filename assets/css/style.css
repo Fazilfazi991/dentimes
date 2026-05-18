@@ -1573,12 +1573,7 @@ a {
   }
 
   .floating-card {
-    padding: 20px !important;
-    width: 100% !important;
-  }
-  
-  .stats {
-    grid-template-columns: 1fr;
+    display: none !important;
   }
 
   .marquee-track {
