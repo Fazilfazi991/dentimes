@@ -249,7 +249,7 @@ a {
   border-radius: 99px;
   padding: 14px 30px;
   background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold-dark) 100%);
-  color: #1a0e04;
+  color: #1a0e04 !important; /* Force high contrast dark color */
   font-weight: 700;
   text-transform: uppercase;
   font-size: 12px;
@@ -261,12 +261,14 @@ a {
   box-shadow: var(--shadow-gold);
   cursor: pointer;
   transition: var(--transition-smooth);
+  text-decoration: none !important;
 }
 
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 15px 30px rgba(223, 186, 115, 0.3);
   filter: brightness(1.05);
+  color: #1a0e04 !important;
 }
 
 .btn:active {
@@ -275,7 +277,7 @@ a {
 
 .btn.secondary {
   background: rgba(255, 255, 255, 0.03);
-  color: var(--color-cream);
+  color: var(--color-cream) !important;
   border: 1px solid var(--border-gold);
   box-shadow: none;
 }
@@ -283,7 +285,13 @@ a {
 .btn.secondary:hover {
   background: rgba(223, 186, 115, 0.1);
   border-color: var(--gold-primary);
-  color: var(--gold-light);
+  color: var(--gold-light) !important;
+}
+
+/* Specificity resets for buttons inside link lists */
+.links a.btn::after,
+.drawer-panel a.btn::after {
+  display: none !important;
 }
 
 /* Mobile Icon Menu */
